@@ -1,0 +1,121 @@
+body
+{
+	font-size: 1em; /*puede ser en in || cm || px*/ /*1em es que el tamaño por defecto*/
+	font-family: Helvetica;
+}
+
+.container
+{
+	width: 90%;  /*ancho respecto a todo el navegador*/
+	margin: 0 5%;   /*margern exterior, si es con dos valores es el primero para arriba y abajo y el segundo para izq y der, uno solo es para todos*/
+	/*padding: 2px 4px 10px 0px;	/*margen  inferior, arriba, derecha, abajo, izquiera, aquí es para los cuatro pero puede ser 1, dos o cuatro, igual que margin*/*/
+}
+
+/*colores*/
+
+.header-container
+{
+	border-bottom: 20px solid #E44d26
+}
+
+.footer-container, .main aside
+{
+	border-bottom: 20px solid #E44d26
+}
+
+.header-container, .footer-container, .main aside
+{
+	background: #F16529
+}
+
+.title
+{
+	color: white;
+}
+
+/*estilo adaptable, empezando de la resolución más baja*/
+/*estilo celular*/
+nav ul
+{
+	margin: 0;
+	padding: 0;
+}
+nav a
+{
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	background: #E44d26;
+}
+
+nav a:hover,nav a:visited
+{
+	color: white;
+}
+
+nav a:hover
+{
+	text-decoration: underline;
+}
+.main
+{
+	padding: 30px 0;
+}
+.main article h1
+{
+	font-size: 2em;
+}
+.main aside
+{
+	color:white;
+	padding: 0px 5% 10px;
+}
+
+.footer-container footer
+{
+	color: white;
+	padding: 20px 0;
+}
+.clearfix:before, .clearfis:after
+{
+	content: " ";
+	display: table;
+}
+.clearfix:after
+{
+	clear: both;
+}
+
+/*estilo para pantallas más anchas que 480px*/
+@media only screen and (min-width: 480px)
+{
+	h1
+	{
+		color: red;
+	}
+	nav a
+	{
+			float: left;
+			width: 27%;
+			margin: 0 1.7%;
+			padding: 25px 2%;
+			margin-bottom: 0;
+	}
+	nav li:first-child a
+	{
+		margin-left: 0;
+	}
+	nav li:last-child a
+	{
+		margin-right: 0;
+	}
+	nav ul li
+	{
+		display: inline;
+	}
+} /*min-width: 480px*/
+*/
